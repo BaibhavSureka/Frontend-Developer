@@ -55,7 +55,6 @@ const Filters = () => {
         </h1>
 
         <div className="flex items-center space-x-4 overflow-x-auto pb-4 scrollbar-hide">
-          {/* Area Filter Dropdown */}
           <div className="relative flex-shrink-0">
             <button
               ref={filterButtonRef}
@@ -136,7 +135,6 @@ const Filters = () => {
             )}
           </div>
 
-          {/* Filter Buttons */}
           {filterButtons.map((button) => (
             <button
               key={button.id}
@@ -151,7 +149,6 @@ const Filters = () => {
             </button>
           ))}
 
-          {/* Price Range Filters */}
           <button
             onClick={() => setPriceRange("300-600")}
             className={`px-4 py-2 rounded-full border transition-colors duration-200 min-w-max ${
@@ -174,7 +171,6 @@ const Filters = () => {
             Less than Rs. 300
           </button>
 
-          {/* Sort Dropdown */}
           <select
             value={sortOrder}
             onChange={(e) => setSortOrder(e.target.value)}

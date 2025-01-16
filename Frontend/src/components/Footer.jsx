@@ -8,7 +8,6 @@ const Footer = () => {
     <footer className="bg-gray-900 text-gray-400">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {/* Company */}
           <div>
             <h3 className="text-white font-semibold mb-4 text-lg">Company</h3>
             <ul className="space-y-2">
@@ -19,7 +18,6 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* Contact */}
           <div>
             <h3 className="text-white font-semibold mb-4 text-lg">Contact</h3>
             <ul className="space-y-2">
@@ -29,7 +27,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Legal */}
           <div>
             <h3 className="text-white font-semibold mb-4 text-lg">Legal</h3>
             <ul className="space-y-2">
@@ -39,7 +36,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Install App */}
           <div>
             <h3 className="text-white font-semibold mb-4 text-lg">Install App</h3>
             <div className="space-y-4">
@@ -53,7 +49,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Social Media Icons */}
         <div className="mt-8 flex justify-center space-x-6">
           <a href="#" className="text-white hover:text-blue-500 transition duration-300">
             <FaFacebook size={24} />
@@ -69,7 +64,6 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* Bottom */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p>&copy; 2024 Food Menu App. All rights reserved.</p>
         </div>

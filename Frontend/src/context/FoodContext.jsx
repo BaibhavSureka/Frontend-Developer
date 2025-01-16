@@ -28,7 +28,6 @@ export const FoodProvider = ({ children }) => {
     priceRange: null,
   });
 
-  // Reset page when filters or area changes
   useEffect(() => {
     setCurrentPage(1);
   }, [selectedArea, filters]);
@@ -37,17 +36,14 @@ export const FoodProvider = ({ children }) => {
     const fetchMeals = async () => {
       setLoading(true);
       try {
-        // First, try to get meals for the selected area
         const response = await fetch(`${API_BASE_URL}/filter.php?a=${selectedArea}`);
         const data = await response.json();
 
         if (!data.meals) {
-          // If no meals found for the area, fetch all meals
           const response = await fetch(`${API_BASE_URL}/search.php?s=`);
           const allMealsData = await allMealsResponse.json();
           setError(null);
           
-          // Add additional properties to each meal
           let processedMeals = (allMealsData.meals || []).map(meal => ({
             ...meal,
             rating: parseFloat((Math.random() * 2 + 3).toFixed(1)),
@@ -59,7 +55,6 @@ export const FoodProvider = ({ children }) => {
             hasOffer: Math.random() > 0.7
           }));
 
-          // Apply filters
           let filteredMeals = processedMeals;
 
           if (filters.ratings4Plus) {
@@ -89,7 +84,6 @@ export const FoodProvider = ({ children }) => {
           setMeals(filteredMeals);
           setTotalPages(Math.max(1, Math.ceil(filteredMeals.length / itemsPerPage)));
         } else {
-          // Process meals from the area-specific response
           let processedMeals = data.meals.map(meal => ({
             ...meal,
             rating: parseFloat((Math.random() * 2 + 3).toFixed(1)),
@@ -101,7 +95,6 @@ export const FoodProvider = ({ children }) => {
             hasOffer: Math.random() > 0.7
           }));
 
-          // Apply filters
           let filteredMeals = processedMeals;
 
           if (filters.ratings4Plus) {
