@@ -1,6 +1,4 @@
-# [Baibhav Sureka] - Frontend Developer
-
-## Technical Assignment | Frontend Developer
+## Technical Assignment
 
 ### Overview
 This project involves building a Food Menu Landing Page using **React**. The primary focus is to demonstrate technical skills, creativity in design, and user experience. The landing page allows users to explore food items with features like filtering, sorting, pagination, and a detailed modal view for selected items.
@@ -9,10 +7,6 @@ The deployed application mimics the design and theme of [Swiggy](https://www.swi
 
 ### Deployed Application
 - Live Link: [Food Menu App](https://food-menu-app-amber.vercel.app/)
-
-### Video Demonstration
-- Video URL: [Loom Video](https://loom.com/share/demo-url)
-
 ---
 
 ## Features
@@ -68,7 +62,7 @@ Data is fetched from [TheMealDB API](https://www.themealdb.com/api.php). Key end
 
 2. Navigate to the project directory:
    ```bash
-   cd <RepoName>
+   cd <Frontend-Developer>
    ```
 
 3. Install dependencies:
@@ -87,7 +81,7 @@ Data is fetched from [TheMealDB API](https://www.themealdb.com/api.php). Key end
 
 ### File Structure
    ```bash
-  <RepoName>
+  <Frontend-Developer>
   ├── public/
   ├── src/
   │   ├── components/
