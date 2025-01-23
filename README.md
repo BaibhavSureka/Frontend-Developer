@@ -57,12 +57,12 @@ Data is fetched from [TheMealDB API](https://www.themealdb.com/api.php). Key end
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/BaibhavSureka/Frontend-Developer.git
+   git clone https://github.com/BaibhavSureka/food-menu-app.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd <Frontend-Developer>
+   cd <food-menu-app>
    ```
 
 3. Install dependencies:
@@ -81,7 +81,7 @@ Data is fetched from [TheMealDB API](https://www.themealdb.com/api.php). Key end
 
 ### File Structure
    ```bash
-  <Frontend-Developer>
+  <food-menu-app>
   ├── public/
   ├── src/
   │   ├── components/
