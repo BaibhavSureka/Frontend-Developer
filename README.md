@@ -62,7 +62,7 @@ Data is fetched from [TheMealDB API](https://www.themealdb.com/api.php). Key end
 
 2. Navigate to the project directory:
    ```bash
-   cd <food-menu-app>
+   cd food-menu-app
    ```
 
 3. Install dependencies:
